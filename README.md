@@ -93,25 +93,33 @@ For each observable a value of the inverse temperature is inferred from the data
 
 ## $T_c$ Estimation
 
-The theoretical critical temperature is given by  
+The theoretical critical temperature is given by
+```math
 $$
 T_c = \frac{1}{\beta_{theo}},
-$$  
+$$
+```
+  
 so with $\beta_{theo} \approx 0.441$, we have  
+
+```math
 $$
 T_c \approx \frac{1}{0.441} \approx 2.269.
-$$ 
+$$
+```
 
 Our inferred value is $\beta_{inf} \approx 0.411$, which corresponds to  
+```math
 $$
 T_{c,\,inf} \approx \frac{1}{0.411} \approx 2.43.
 $$  
-
+```
 The relative error in temperature is then  
+```math
 $$
 \text{Error} = \frac{|T_{c,\,inf} - T_c|}{T_c} \approx \frac{|2.43 - 2.269|}{2.269} \approx 7\%.
 $$
-
+```
 Improving the results can be achieved by increasing the number of thermalization steps and measurement samples, and by optimizing the number of subsweeps between measurements.
 
 
