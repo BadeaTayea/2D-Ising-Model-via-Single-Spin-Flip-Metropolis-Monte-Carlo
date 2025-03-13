@@ -31,14 +31,14 @@ Our work involved calculating key observables—energy ($E$), magnetization ($M$
 
 ## Table of Contents
 
-- [Task 1: Thermodynamic Observables at Varying $T$](#task-1-thermodynamic-observables-at-varying-t)
-- [Task 2: $T_c$ Estimation](#task-2-t_c-estimation)
-- [Task 3: Results' Dependence on System Size](#task-3-results-dependence-on-system-size)
-- [Task 4: Saving Computation Time Using a Predefined Dictionary](#task-4-saving-computation-time-using-a-predefined-dictionary)
-- [Task 5: Dependence of $M$ on the Simulation Time at $T < T_c$](#task-5-dependence-of-m-on-the-simulation-time-at-t--tc)
+- [Thermodynamic Observables at Varying $T$](#thermodynamic-observables-at-varying-t)
+- [$T_c$ Estimation](#t_c-estimation)
+- [Results' Dependence on System Size](#results-dependence-on-system-size)
+- [Saving Computation Time Using a Predefined Dictionary](#saving-computation-time-using-a-predefined-dictionary)
+- [Dependence of $M$ on the Simulation Time at $T < T_c$](#dependence-of-m-on-the-simulation-time-at-t--tc)
 
 
-## Task 1: Thermodynamic Observables at Varying $T$ 
+## Thermodynamic Observables at Varying $T$ 
 - `v2.0-ising2d.py`
 
 Theoretically, the following behavior is expected for each therodynamic observable in the Ising model:
@@ -91,7 +91,7 @@ For each observable a value of the inverse temperature is inferred from the data
 </div>
 
 
-## Task 2: $T_c$ Estimation
+## $T_c$ Estimation
 
 The theoretical critical temperature is given by  
 $$
@@ -115,7 +115,7 @@ $$
 Improving the results can be achieved by increasing the number of thermalization steps and measurement samples, and by optimizing the number of subsweeps between measurements.
 
 
-## Task 3: Results' Dependence on System Size 
+## Results' Dependence on System Size 
 - `v2.0-multi_size_simulation.py`
 
 In this section, we reduce the number of measurements $N_{\text{sample}}$ to $1000$ and Thermalization steps $N_{\text{therm}}$ to $10^4$  for convenience. Plots generated aim to provide insight into how finite-size effects influence the observed phase transition and allow for a comparison with theoretical expectations.
@@ -153,7 +153,7 @@ As the system size $L$ increases:
 For the smallest system ($L=5$), the inferred inverse temperature for the susceptibility peak is at $\beta_{\text{peak}}^{\chi} \approx 0.567$, which is notably further from the expected value than for larger systems, where $\beta_{\text{peak}}^{\chi}$ converges to approximately $0.411$ for $L \ge 10$. The peak susceptibility $\chi$ increases with system size (from about $13.27$ at $L=5$ to $40.23$ at $L=25$), indicating stronger critical fluctuations as $L$ increases. In contrast, the peak heat capacity $C_V$ remains relatively constant (around $1.2$ for $L \ge 10$) with minor fluctuations. These results illustrate that as the system size grows, the estimates for the critical inverse temperature stabilize and the amplitude of fluctuations in susceptibility increases, consistent with finite-size scaling theory and the approach toward the thermodynamic limit.
 
 
-## Task 4: Saving Computation Time Using a Predefined Dictionary
+## Saving Computation Time Using a Predefined Dictionary
 - `lookup-ising2d.py`
 - `lookup-multi_size_simulation.py`
 - `lookup-micro-benchmarking.py`
@@ -179,7 +179,7 @@ Time without lookup: 4.3368 s over 500000 iterations
 
 
 
-## Task 5: Dependence of $M$ on the simulation time at a temperature $T < T_c$ 
+## Dependence of $M$ on the simulation time at a temperature $T < T_c$ 
 
 - `magnetization-timeseries.py` 
 
