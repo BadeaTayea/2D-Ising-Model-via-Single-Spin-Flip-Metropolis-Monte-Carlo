@@ -1,0 +1,2 @@
+Time with lookup: 3.1099 s over 500000 iterations
+Time without lookup: 4.3368 s over 500000 iterations
