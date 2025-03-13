@@ -8,10 +8,11 @@ $$
 
 where the sum runs over all nearest-neighbor pairs and periodic boundary conditions are imposed. The model is simulated via a single-spin flip Metropolis algorithm: a random spin is selected and flipped with probability
 
+```math
 $$
 \min\left\{1,\, e^{-\Delta E/T}\right\},
 $$
-
+```
 with the energy change given by
 
 $$
