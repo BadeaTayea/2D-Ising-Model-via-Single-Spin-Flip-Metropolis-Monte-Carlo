@@ -37,6 +37,12 @@ Our work involved calculating key observables—energy ($E$), magnetization ($M$
 - [Saving Computation Time Using a Predefined Dictionary](#saving-computation-time-using-a-predefined-dictionary)
 - [Dependence of $M$ on the Simulation Time at $T < T_c$](#dependence-of-m-on-the-simulation-time-at-t--tc)
 
+- [Thermodynamic Observables at Varying \(T\)](#thermodynamic-observables-at-varying-t)
+- [\(T_c\) Estimation](#tc-estimation)
+- [Results' Dependence on System Size](#results-dependence-on-system-size)
+- [Saving Computation Time Using a Predefined Dictionary](#saving-computation-time-using-a-predefined-dictionary)
+- [Dependence of \(M\) on the Simulation Time at \(T < T_c\)](#dependence-of-m-on-the-simulation-time-at-t--tc)
+
 
 ## Thermodynamic Observables at Varying $T$ 
 - `v2.0-ising2d.py`
